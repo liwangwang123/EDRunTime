@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :https://github.com/liwangwang123/EDRunTime.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/liwangwang123/EDRunTime.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -90,10 +90,10 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "runtime", "runtime/**/*.{h,m}"
-  s.exclude_files = "runtime/Exclude"
+  s.source_files  = "Runtime", "Runtime/**/*.{h,m}"
+  s.exclude_files = "Runtime/Exclude"
 
-  # s.public_header_files = "Classes/**/*.h"
+   s.public_header_files = "Runtime/**/*.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
